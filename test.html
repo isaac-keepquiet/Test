@@ -5,12 +5,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>All Text</title>
         <link rel="stylesheet" href="test.css">
-        <script src="test.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <!-- <h1>Hello World!</h1>
         <div class="color font">
+            this
         </div>
-        <input type="email" value="" placeholder="email">
+        <input type="email" value="" placeholder="email"> -->
+
+
+        
+        <table id="example1" class="table table-bordered table-striped dataTable " role="grid" aria-describedby="example1_info">
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>                           
+            <th>Quantity</th>
+            <th>Total</th>
+            </tr>
+        </thead>
+        <tbody> 
+        
+            <tr>
+            <td>111</td>
+            <td>John</td>
+            <td>
+                <input type="number" class="pr price" name="" pr_id="" value="" onchange= "add_to_total(this)" style="width: 60px; height: 26px"> 
+            </td>    
+            <td>
+                <input type="number" class="pr qty" name="" value="" onchange= "add_to_total(this)" style="width: 60px; height: 26px">
+            </td>
+            <td>
+                <input type="number" name=""  class="pr total_price" style="width: 60px; height: 26px">
+            </td>
+            </tr>
+            <tr>
+            <td>222</td>
+            <td>Jane</td>
+            <td>
+                <input type="number" class="pr price" name="" pr_id="" value="" onchange= "add_to_total(this)" style="width: 60px; height: 26px"> 
+            </td>    
+            <td>
+                <input type="number" class="pr qty" name="" value="" onchange= "add_to_total(this)" style="width: 60px; height: 26px">
+            </td>
+            <td>
+                <input type="number" name=""  class="pr total_price" style="width: 60px; height: 26px">
+            </td>
+            </tr>
+            <tr>
+            <td></td>
+            <td></td>
+            <td><strong id="p_total"></strong></td>
+            <td>
+            <strong id="q_total"></strong>
+            </td>
+            </tr>
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>                             
+            <th>Quantity</th> 
+            <th>Total</th>             
+            </tr>
+        </tfoot> -->
+        </table>
     </body>
+    <script src="test.js"></script>
 </html>
